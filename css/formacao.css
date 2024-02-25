@@ -1,0 +1,115 @@
+.formacao {
+  background-color: #141414;
+  color: #fff;
+  padding: 1em;
+  position: relative;
+}
+
+.formacao__container {
+  padding: 0 15px;
+  margin: 2em 0;
+}
+.formacao__colunaum {
+  display: none;
+}
+.formacao__texto {
+  font-size: 15px;
+  margin-bottom: 2em;
+}
+.Formacao__faculdades-lista {
+  background-color: #000000;
+  width: 50%;
+  margin: 1em;
+  padding: 0.5em;
+  position: relative;
+}
+.detalhe__formacao {
+  width: 30px;
+  height: 20px;
+  left: 10em;
+  top: 5px;
+  position: absolute;
+}
+.lista__titulo {
+  color: #c6c6c6;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.lista__formacao {
+  font-weight: bold;
+  font-size: 15px;
+}
+.outros__cursos-titulo {
+  font-weight: bold;
+  color: #c6c6c6;
+  margin: 2em 0 1em 0;
+}
+.container__cursos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.cursos__linguas span {
+  color: #c6c6c6;
+}
+@media screen and (min-width: 1024px) {
+  .formacao__colunas {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 0;
+  }
+  .formacao__colunaum {
+    display: block;
+    text-transform: uppercase;
+    font-size: 7em;
+    font-weight: 700;
+    color: #000;
+    word-break: break-all;
+    max-width: 8ch;
+    margin-top: 10px;
+  }
+  .formacao__texto {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 26px;
+    margin: 20px 0;
+  }
+
+  .Formacao__faculdades {
+    align-items: center;
+    padding: 1em;
+  }
+  .Formacao__faculdades-lista {
+    width: 40%;
+  }
+  .detalhe__formacao {
+    width: 30%;
+    height: 30%;
+    top: 10px;
+  }
+  .lista__titulo {
+    font-size: 20px;
+  }
+  .lista__formacao {
+    font-size: 25px;
+  }
+  .outros__cursos-titulo {
+    font-size: 25px;
+  }
+  .container__cursos,
+  .cursos__horas,
+  .cursos__linguas,
+  .cursos__linguas span {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .formacao__colunaum {
+    font-size: 8em;
+    max-width: 5ch;
+  }
+  .formacao__texto {
+    font-size: 30px;
+  }
+}
